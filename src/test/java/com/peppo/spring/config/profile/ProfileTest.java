@@ -12,6 +12,7 @@ import org.springframework.test.context.ActiveProfiles;
 @SpringBootTest(classes = ProfileTest.TestApplication.class)
 //@ActiveProfiles({"production, xxx, zzz"}) // berfungsi mengganti langsung profile yang aktif pada class ini
 // apabila dijalankan maka profile yang aktif menjadi production
+@ActiveProfiles({"production"})
 public class ProfileTest {
 
     @Autowired
